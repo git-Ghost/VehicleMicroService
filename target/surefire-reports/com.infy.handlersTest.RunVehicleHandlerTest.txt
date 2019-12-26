@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.infy.handlersTest.RunVehicleHandlerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.174 s <<< FAILURE! - in com.infy.handlersTest.RunVehicleHandlerTest
+com.infy.handlersTest.RunVehicleHandlerTest  Time elapsed: 0.172 s  <<< ERROR!
+java.lang.IllegalStateException: Configuration error: found multiple declarations of @BootstrapWith for test class [com.infy.handlersTest.RunVehicleHandlerTest]: [@org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper), @org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper)]
+
