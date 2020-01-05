@@ -1,5 +1,6 @@
 package com.infy.models;
 
+import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -16,7 +17,7 @@ public class Vehicle {
 
 	@Id
 	private Long id;
-	
+
 	@NonNull
 	private String vin;
 	@NonNull
@@ -38,11 +39,22 @@ public class Vehicle {
 	@NonNull
 	private boolean isActive;
 
+	@NonNull
+	private BigDecimal amount;
+
+	public BigDecimal getAmount() {
+		return amount;
+	}
+
+	public void setAmount(BigDecimal amount) {
+		this.amount = amount;
+	}
+
 	public Long getId() {
 		return id;
 	}
-	
-	//Will the set id as yyMMddhhmmssMs format
+
+	// Will the set id as yyMMddhhmmssMs format
 	public void setId() {
 		Date dNow = new Date();
 		SimpleDateFormat ft = new SimpleDateFormat("yyMMddhhmmssMs");
